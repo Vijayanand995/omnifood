@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: omnifood
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: omnifood
+  template:
+    metadata:
+      labels:
+        app: omnifood
+    spec:
+      containers:
+        - name: omnifood
+          image: vijayanand995/omnifoodpipeline
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80

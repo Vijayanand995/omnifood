@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: omnifood
+  labels:
+    app: omnifood
+spec:
+  selector:
+    app: omnifood
+  type: Loadbalancer
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 80
+      nodeport: 31200
