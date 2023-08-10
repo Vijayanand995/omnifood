@@ -2,6 +2,8 @@
   become: true
   tasks:
     - name: Create new deployment
+      become_user: server03
       command: kubectl apply -f /home/ubuntu/Deployment.yml
     - name: Create new service
+      become_user: server03
       command: kubectl apply -f /home/ubuntu/Service.yml
