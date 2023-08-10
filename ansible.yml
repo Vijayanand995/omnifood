@@ -4,8 +4,8 @@
     - name: Create new deployment
       become: true
       become_user: server03
-      command: kubectl apply -f /home/ubuntu/Deployment.yml
+      command: kubectl apply -f /home/server03/Omnifood/Deployment.yml
     - name: Create new service
       become: true
       become_user: server03
-      command: kubectl apply -f /home/ubuntu/Service.yml
+      command: kubectl apply -f /home/server03/Omnifood/Service.yml
