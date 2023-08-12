@@ -7,9 +7,9 @@ metadata:
 spec:
   selector:
     app: omnifood
-  type: LoadBalancer
+  type: Loadbalancer
   ports:
     - protocol: TCP
       port: 8080
       targetPort: 80
-      nodePort: 31200
+      nodeport: 31200
