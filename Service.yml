@@ -7,7 +7,6 @@ metadata:
 spec:
   selector:
     app: omnifood
-  type: LoadBalancer
   ports:
     - protocol: TCP
       port: 8080
