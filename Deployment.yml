@@ -16,5 +16,3 @@ spec:
         - name: omnifood
           image: vijayanand995/omnifoodpipeline
           imagePullPolicy: Always
-          ports:
-            - containerPort: 80
